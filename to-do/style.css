@@ -81,10 +81,9 @@
 }
 
 @font-face {
-  font-family: 'Another Danger';
-  src: url("./assets/Another\ Danger\ -\ Demo.otf") format("woff2");
-  /* font-weight: 100 900;
-  font-style: oblique -10deg 40deg; */
+  font-family: 'Another Danger - Demo';
+  src: url("./assets/Another Danger - Demo.woff2") format("woff2"),
+  url("./assets/Another Danger - Demo.ttf") format("truetype");
 }
 
 * {
@@ -98,7 +97,6 @@ body {
   margin: auto;
   font-family: Inter, sans-serif;
   display: flex;
-  /*place-items: first baseline;*/
   min-height: 100vh;
   background-color: var(--background-color);
 }
@@ -151,7 +149,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-family: "Another Danger", Inter, sans-serif;
+  font-family: 'Another Danger - Demo', Inter, sans-serif;
   letter-spacing: 2px;
   margin: 0 0 40px 0;
   font-size: 32px;
