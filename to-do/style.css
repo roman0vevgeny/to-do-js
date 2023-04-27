@@ -73,6 +73,13 @@
   --selection-background-color: #e8e8e8;
 }
 
+@font-face {
+  font-family: Inter;
+  src: url("./assets/Inter-VariableFont_slnt,wght.ttf") format("woff2");
+  font-weight: 100 900;
+  font-style: oblique -10deg 40deg;
+}
+
 * {
   font-family: Inter, sans-serif;
   line-height: 1.5;
