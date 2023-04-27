@@ -80,6 +80,13 @@
   font-style: oblique -10deg 40deg;
 }
 
+@font-face {
+  font-family: 'Another Danger';
+  src: url("./assets/Another\ Danger\ -\ Demo.otf") format("woff2");
+  /* font-weight: 100 900;
+  font-style: oblique -10deg 40deg; */
+}
+
 * {
   font-family: Inter, sans-serif;
   line-height: 1.5;
@@ -144,7 +151,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-family: "Another Danger - Demo", Inter, sans-serif;
+  font-family: "Another Danger", Inter, sans-serif;
   letter-spacing: 2px;
   margin: 0 0 40px 0;
   font-size: 32px;
