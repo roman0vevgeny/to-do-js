@@ -2,6 +2,7 @@
   --background-input-focus-color: #f3f3f3;
   --background-color: #f3f3f3;
   --app-background-color: #ffffff;
+  --app-border: #eeeeee;
   --title-color: #2566ff;
   --title-background-color: #effaff;
   --button-background-color: #fee6ff;
@@ -20,6 +21,7 @@
   --sort-menu-hover-color: #9d9d9d;
   --sort-menu-item-hover: #f5f5f5;
   --task-item-border: #c4e9ff;
+  --task-item-border-hover: #92b3ff;
   --checkmark-border: #c4e9ff;
   --checkmark-border-hover: #2566ff;
   --checkmark-color: #ffffff;
@@ -33,6 +35,8 @@
   --circle-color-1: #f1f5ff;
   --selection-color: #ffffff;
   --selection-background-color: #2566ff;
+  --button-border: #d9f1ff;
+  --button-border-hover: #2566ff;
 
 }
 
@@ -40,6 +44,7 @@
   --background-input-focus-color: #f3f3f3;
   --background-color: #333333;
   --app-background-color: #4a4a4a;
+  --app-border: #525252;
   --title-color: #dadada;
   --title-background-color: #515151;
   --button-background-color: #5f5f5f;
@@ -58,6 +63,7 @@
   --sort-menu-hover-color: #cacaca;
   --sort-menu-item-hover: #5f5f5f;
   --task-item-border: #626262;
+  --task-item-border-hover: #7e7e7e;
   --checkmark-border: #767676;
   --checkmark-border-hover: #e8e8e8;
   --checkmark-color: #626262;
@@ -71,6 +77,8 @@
   --circle-color-1: #414141;
   --selection-color: #414141;
   --selection-background-color: #e8e8e8;
+  --button-border: #686868;
+  --button-border-hover: #252525;
 }
 
 @font-face {
@@ -143,6 +151,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 800px;
   margin: 50px auto;
   padding: 60px;
+  border: 1px solid var(--app-border);
   border-radius: 10px;
   background-color: var(--app-background-color);
   z-index: 1;
@@ -219,6 +228,7 @@ h1 {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 20px;
+  color: var(--input-text-focus-color);
   cursor: pointer;
   outline: none;
   box-sizing: border-box;
@@ -417,6 +427,10 @@ li.task-item {
   justify-content: space-between;
 }
 
+/* li.task-item:hover {
+  border: 1px solid var(--task-item-border-hover);
+} */
+
 .task-div {
   display: flex;
   justify-content: start;
@@ -506,7 +520,7 @@ li.task-item {
   padding: 5px 10px;
   margin: 0 10px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--button-border);
   background-color: var(--edit-button-background);
   cursor: pointer;
   color: var(--edit-button-color);
@@ -516,12 +530,13 @@ li.task-item {
 .task-item-edit-button:hover {
   background-color: var(--edit-button-background-hover);
   color: var(--edit-button-hover-color);
+  border: 1px solid var(--button-border-hover);
 }
 
 .task-item-delete-button {
   padding: 5px 10px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid var(--button-border);
   background-color: var(--edit-button-background);
   cursor: pointer;
   color: var(--edit-button-color);
@@ -531,6 +546,7 @@ li.task-item {
 .task-item-delete-button:hover {
   background-color: var(--edit-button-background-hover);
   color: var(--edit-button-hover-color);
+  border: 1px solid var(--button-border-hover);
 }
 
 .task-item-input {
